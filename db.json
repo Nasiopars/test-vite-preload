@@ -1,1 +1,11 @@
-"https://my-json-server.typicode.com/Nasiopars/test-vite-preload"
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
