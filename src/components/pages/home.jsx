@@ -51,7 +51,7 @@ const Home = () => {
                 <img src={reactLogo} className="logo react" alt="React logo" />
               </a>
           </div>
-          <span className="inline-flex"> with routing <h1>Vite + Reactjs + Prerender </h1></span>
+          <span className="inline-flex"> with  <h1>Vite + Reactjs + Prerender </h1></span>
           
           
           <div className="card">
