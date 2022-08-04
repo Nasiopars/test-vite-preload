@@ -1,10 +1,13 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
+import "@babel/polyfill";//preloader
 
 // PAGES
 import Layout from './components/pages/layout';
 import Home from './components/pages/home';
 import LinkEndPointPage from './components/linksEndPage';
+// import { Helmet } from 'react-helmet';
+
 
 // import Missing from './components/pages/missing';
 // import Unauthorized from './components/pages/unauthorized';
@@ -14,6 +17,9 @@ function App() {
  
   return (
     <>
+     
+
+
     <Routes>
       <Route path='/' element={<Layout/>} >
         {/* public routes */}

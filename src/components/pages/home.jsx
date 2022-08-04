@@ -3,6 +3,8 @@ import reactLogo from '../../assets/react.svg'
 import { Link } from "react-router-dom";
 import axios from '../api/axios';
 import LoadingSpinner from '../loadingSpinner';
+import { Helmet } from 'react-helmet';
+
 
 const dbUrl = "https://my-json-server.typicode.com/Nasiopars/test-vite-preload/db";
 
@@ -39,10 +41,27 @@ const Home = () => {
       })
       return result;
     }
-  
+
+    const handleIncrement = () =>{
+      let sum  = count + 1 ; 
+     setCount(sum);
+    }
     return (
         <>
           <div className="App">
+
+            <Helmet>
+              <meta charSet="utf-8" />
+              <meta name="author" content="kabir" />
+              <meta name="description" content="an app for match test vite + preloder system" />
+              <meta name="keywords" content="HTML, CSS, JavaScript" />
+              {/* <meta name="robots" content="noindex/nofollow" /> */}
+              {/* <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" /> */}
+              <title>vite preloader</title>
+              {/* <link rel="canonical" href="" /> */}
+            </Helmet>
+
+
             <div>
               <a href="https://vitejs.dev" target="_blank">
                 <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -55,7 +74,7 @@ const Home = () => {
           
           
           <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
+            <button onClick={handleIncrement}>
               count is {count}
             </button>
             <button 
