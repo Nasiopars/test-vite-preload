@@ -28,7 +28,7 @@ const Home = () => {
             console.log(error);
           }
       }
-      setTimeout(getLinks, 1500);
+      setTimeout(getLinks, 500);
       setIsLoading(false);
   },[]);
 
@@ -45,6 +45,7 @@ const Home = () => {
       let sum  = count + 1 ; 
      setCount(sum);
     }
+
     return (
         <>
           {/* <div className="App"> */}
@@ -56,7 +57,7 @@ const Home = () => {
               <meta name="keywords" content="HTML, CSS, JavaScript" />
               {/* <meta name="robots" content="noindex/nofollow" /> */}
               {/* <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" /> */}
-              <title>vite preloader</title>
+              <title>vite-reactsnap-route</title>
               <link rel="icon" type="image/x-icon" href="/favicon.ico" />
               {/* <link rel="canonical" href="" /> */}
             </Helmet>
@@ -70,7 +71,7 @@ const Home = () => {
                 <img src={reactLogo} className="logo react" alt="React logo" />
               </a>
           </div>
-          <span className="inline-flex"> with routing <h1>Vite + Reactjs + Prerender </h1></span>
+          <span className="inline-flex"> with routing <h1>Vite + React snap library </h1></span>
           
           
           <div className="card">

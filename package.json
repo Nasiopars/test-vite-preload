@@ -6,7 +6,7 @@
   "reactSnap": {
     "source": "/build",
     "inlineCss": true,
-	  "headless": false
+	  "headless": true
 },
   
   "scripts": {
@@ -33,15 +33,7 @@
   },
   "description": "",
   "main": "vite.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nasiopars/test-vite-preload.git"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nasiopars/test-vite-preload/issues"
-  },
-  "homepage": "https://github.com/Nasiopars/test-vite-preload#readme"
+  "author": "kabir",
+  "license": "ISC"
 }
