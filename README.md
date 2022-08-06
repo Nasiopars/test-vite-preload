@@ -7,6 +7,7 @@
 - Vite
 - React-snap
 - React-router-dom
+- axios
 - helmet
 
 **Zero configuration** 
