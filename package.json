@@ -33,7 +33,15 @@
   },
   "description": "",
   "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nasiopars/test-vite-preload.git"
+  },
   "keywords": [],
-  "author": "kabir",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nasiopars/test-vite-preload/issues"
+  },
+  "homepage": "https://github.com/Nasiopars/test-vite-preload#readme"
 }
