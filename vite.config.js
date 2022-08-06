@@ -6,11 +6,15 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: './build',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        // app: '/index.html',
+        main: resolve(__dirname, './index.html'),
         // nested: resolve(__dirname, 'nested/index.html')
       }
     }
   }
 })
+
+

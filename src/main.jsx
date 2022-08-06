@@ -1,19 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import App from './App';
+import "@babel/polyfill";//preloader - no need
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { hydrate, render } from "react-dom";
+import ReactDOM from "react-dom";
+import {hydrate, render} from "react-dom";
 
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
+const _Root = document.getElementById("root");
+if (_Root.hasChildNodes()) {
   hydrate(
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/*" element={<App />}/>     
       </Routes>
     </BrowserRouter>
-  , rootElement);
+  , _Root);
 } else {
   render( 
     <BrowserRouter>
@@ -21,5 +22,17 @@ if (rootElement.hasChildNodes()) {
         <Route path="/*" element={<App />}/>     
       </Routes>
     </BrowserRouter>
-  , rootElement);
+  , _Root);
 }
+
+
+// const rootElement = document.getElementById("root");
+// const renderMethod = (rootElement.hasChildNodes()) ? ReactDOM.render : ReactDOM.hydrate;
+// renderMethod(
+//   <BrowserRouter>
+//     <Routes>
+//       <Route path="/*" element={<App />}/>     
+//     </Routes>
+//   </BrowserRouter>,
+//   rootElement
+// );

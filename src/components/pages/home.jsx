@@ -12,8 +12,7 @@ const Home = () => {
     const [count, setCount] = useState(0)
     const [links, setLinks] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    // const [errMsg, setErrMsg] = useState("");
-
+    const [errMsg, setErrMsg] = useState("");
 
     useEffect(()=>{
       const getLinks = async ()=>{
@@ -48,7 +47,7 @@ const Home = () => {
     }
     return (
         <>
-          <div className="App">
+          {/* <div className="App"> */}
 
             <Helmet>
               <meta charSet="utf-8" />
@@ -58,6 +57,7 @@ const Home = () => {
               {/* <meta name="robots" content="noindex/nofollow" /> */}
               {/* <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" /> */}
               <title>vite preloader</title>
+              <link rel="icon" type="image/x-icon" href="/favicon.ico" />
               {/* <link rel="canonical" href="" /> */}
             </Helmet>
 
@@ -100,7 +100,7 @@ const Home = () => {
           <p className="justify">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
           </p>
-        </div>
+        {/* </div> */}
 
         </>
         

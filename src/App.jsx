@@ -1,7 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import "@babel/polyfill";//preloader
-
 // PAGES
 import Layout from './components/pages/layout';
 import Home from './components/pages/home';
@@ -17,8 +16,6 @@ function App() {
  
   return (
     <>
-     
-
 
     <Routes>
       <Route path='/' element={<Layout/>} >
