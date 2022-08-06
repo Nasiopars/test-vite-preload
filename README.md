@@ -10,6 +10,6 @@
 - helmet
 
 **Zero configuration** 
-1- install : npm install
-2- run : npm run dev
-3- build : npm run build - exported in Build folder.
+- install : 'npm install'
+- run : 'npm run dev'
+- build : 'npm run build' - exported in Build folder.
