@@ -34,7 +34,9 @@ const LinkEndPointPage = ()=>{
                 <h2>{link.title}</h2>
                 <h3>id : {link.id}</h3>
                 <p className="para">{link.description}</p>
-                <Link to="/">♠ بازگشت به خانه ♠</Link>
+                <Link to={{
+                  pathname: "/"
+                }}>♠ بازگشت به خانه ♠</Link>
             </div>
             }
         })
